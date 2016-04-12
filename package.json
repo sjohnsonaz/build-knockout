@@ -1,0 +1,11 @@
+{
+  "name": "build-knockout",
+  "version": "0.0.0",
+  "author": "Sean Johnson <sjohnson@sjohnsonaz.com>",
+  "private": true,
+  "dependencies": {
+    "build-widgets": "https://github.com/sjohnsonaz/build-widgets.git",
+    "gulp": "^3.9.0",
+    "webpack-stream": "^3.1.0"
+  }
+}
