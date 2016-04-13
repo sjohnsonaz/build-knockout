@@ -3,8 +3,20 @@ $(function () {
         var self = this;
         this.modalOpen = ko.observable(false);
         this.clickOpenModal = function () {
-            self.modalOpen(true);
-        }
+                self.modalOpen(true);
+            },
+            this.carouselIndex = ko.observable(0);
+        this.carouselCount = ko.observable(0);
+        this.clickCarouselNext = function (data, event) {
+            var carouselIndex = self.carouselIndex();
+            carouselIndex++;
+            self.carouselIndex(carouselIndex);
+        };
+        this.clickCarouselBack = function (data, event) {
+            var carouselIndex = self.carouselIndex();
+            carouselIndex--;
+            self.carouselIndex(carouselIndex);
+        };
     };
     ko.applyBindings(viewModel);
 
