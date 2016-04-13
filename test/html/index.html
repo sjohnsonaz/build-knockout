@@ -13,12 +13,312 @@
 
 <body>
     <div class="container">
-        <h1>Build Knockout</h1>
-        <h2>Components</h2>
+        <h1>Build Widgets</h1>
+        <h2>Input</h2>
         <section class="section">
-            <header>Components</header>
+            <header>Buttons</header>
             <div class="section-content">
-                Test
+                <h3>Individual Buttons</h3>
+                <div>
+                    <button class="button">Edit</button>
+                    <button class="button button-primary">Save</button>
+                    <button class="button button-danger">Delete</button>
+                </div>
+
+                <h3>Button Group</h3>
+                <div>
+                    <div class="button-group">
+                        <button class="button">Edit</button>
+                        <button class="button button-primary">Save</button>
+                        <button class="button button-danger">Delete</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <h2>Form</h2>
+        <section class="section">
+            <header>Basic Form</header>
+            <div class="section-content">
+                <form class="form">
+                    <div class="form-lock-screen"></div>
+                    <div class="form-container">
+                        <label class="form-label">
+                            <div class="form-title">
+                                Title
+                            </div>
+                            <div class="form-input">
+                                <input type="text" />
+                            </div>
+                        </label>
+                    </div>
+                    <div class="form-actions">
+                        <button>Save</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <h2>Data</h2>
+        <section class="section">
+            <header>Table</header>
+            <div class="section-content">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Column 0</th>
+                            <th>Column 1</th>
+                            <th>Column 2</th>
+                            <th>Column 3</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Data 0</td>
+                            <td>Data 1</td>
+                            <td>Data 2</td>
+                            <td>Data 3</td>
+                        </tr>
+                        <tr>
+                            <td>Data 4</td>
+                            <td>Data 5</td>
+                            <td>Data 6</td>
+                            <td>Data 7</td>
+                        </tr>
+                        <tr>
+                            <td>Data 8</td>
+                            <td>Data 9</td>
+                            <td>Data 10</td>
+                            <td>Data 11</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <th>Column 0</th>
+                            <th>Column 1</th>
+                            <th>Column 2</th>
+                            <th>Column 3</th>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+        </section>
+        <section class="section">
+            <header>Pager</header>
+            <div class="section-content">
+                <ul class="pager">
+                    <li>
+                        <a href="#">&lt;</a>
+                    </li>
+                    <li class="pager-active">
+                        <a href="#">1</a>
+                    </li>
+                    <li>
+                        <a href="#">2</a>
+                    </li>
+                    <li>
+                        <a href="#">3</a>
+                    </li>
+                    <li>
+                        <a href="#">&gt;</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <h2>Widgets</h2>
+        <section class="section">
+            <header>Information</header>
+            <div class="section-content">
+                <h3>Progress Bar</h3>
+                <div class="progress-bar">
+                    <div style="width: 50%;">50%</div>
+                </div>
+
+                <h3>Tooltip</h3>
+                <button class="button tooltip tooltip-right tooltip-open" aria-label="Tooltip text">Tooltip</button>
+
+                <h3>Popover</h3>
+                <button class="button popover-trigger">
+                    <div class="popover popover-right popover-align-center popover-open">
+                        <div class="popover-content">Popover text</div>
+                    </div>
+                    Popover
+                </button>
+
+                <h3>Notification</h3>
+                <aside class="notification notification-success">
+                    <header>Success</header>
+                    <div class="notification-content">
+                        Success content
+                    </div>
+                </aside>
+                <button id="clickShowNotifications" class=button>Show Notifications</button>
+                <div class="notification-container hidden">
+                    <aside class="notification">
+                        <header>Notification</header>
+                        <div class="notification-content">
+                            Notification content
+                        </div>
+                    </aside>
+                    <aside class="notification notification-success">
+                        <header>Success</header>
+                        <div class="notification-content">
+                            Success content
+                        </div>
+                    </aside>
+                    <aside class="notification notification-info">
+                        <header>Information</header>
+                        <div class="notification-content">
+                            Information content
+                        </div>
+                    </aside>
+                    <aside class="notification notification-warning">
+                        <header>Warning</header>
+                        <div class="notification-content">
+                            Warning content
+                        </div>
+                    </aside>
+                    <aside class="notification notification-danger">
+                        <header>Danger</header>
+                        <div class="notification-content">
+                            Danger content
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </section>
+        <section class="section">
+            <header>Navigation</header>
+            <div class="section-container">
+                <div class="section-content">
+                    <h3>Navbar</h3>
+                    <nav class="nav">
+                        <ul>
+                            <li>
+                                <a href="#0">Link 0</a>
+                            </li>
+                            <li>
+                                <a href="#1">Link 1</a>
+                            </li>
+                            <li>
+                                <a href="#2">Link 2</a>
+                            </li>
+                            <li>
+                                <a href="#3">Link 3 &#x25bc;</a>
+                                <ul>
+                                    <li>
+                                        <a href="#0">Nested Link 0</a>
+                                    </li>
+                                    <li>
+                                        <a href="#1">Nested Link 1</a>
+                                    </li>
+                                    <li>
+                                        <a href="#2">Nested Link 2</a>
+                                    </li>
+                                    <li>
+                                        <a href="#3">Nested Link 3 &#x25bc</a>
+                                        <ul>
+                                            <li>
+                                                <a href="#0">Double Nested Link 0</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+
+                    <h3>Breadcrumb</h3>
+                    <ul class="breadcrumb">
+                        <li>
+                            <span>Current</span>
+                        </li>
+                        <li>
+                            <a href="#2">Link</a>
+                        </li>
+                        <li>
+                            <a href="#1">Container</a>
+                        </li>
+                        <li>
+                            <a href="#0">Home</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="section">
+            <header>Containers</header>
+            <div class="section-content">
+                <h3>Tab</h3>
+                <div class="tab-container">
+                    <ul class="tab-header">
+                        <li class="tab-title tab-active">
+                            <a>Widgets</a>
+                        </li>
+                        <li class="tab-title"><a>Input</a></li>
+                        <li class="tab-title"><a>View Models</a></li>
+                    </ul>
+                    <div class="tab-body">
+                        <div class="tab-panel tab-active">
+                            Widgets Content
+                        </div>
+                        <div class="tab-panel">
+                            Input Content
+                        </div>
+                        <div class="tab-panel">
+                            View Models Content
+                        </div>
+                    </div>
+                </div>
+
+                <h3>Modal</h3>
+                <button class="button" data-bind="click: clickOpenModal">Open Modal</button>
+                <modal params="open: modalOpen">
+                    <div class="modal-header">
+                        <h1 class="modal-title">Title</h1>
+                        <div class="modal-controls">
+                            <button data-bind="click: clickClose">Close Modal</button>
+                        </div>
+                    </div>
+                    <p>Modal Content</p>
+                </modal>
+
+                <h3>Carousel</h3>
+                <button id="clickCarouselBack" class="button">Back</button>
+                <button id="clickCarouselNext" class="button">Next</button>
+                <div class="carousel" style="background-color: black; border-radius: 5px;">
+                    <div class="carousel-selected" style="background-color: red; padding: 10px;">
+                        Content 0
+                    </div>
+                    <div style="background-color: blue; padding: 10px;">
+                        Content 1
+                        <br /> Line 2
+                    </div>
+                    <div style="background-color: yellow; padding: 10px;">
+                        Content 2
+                        <br /> Line 2
+                        <br /> Line 3
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section">
+            <header>Input</header>
+            <div class="section-content">
+                <div class="calendar">
+                </div>
+            </div>
+        </section>
+        <section class="section">
+            <header>Tools</header>
+            <div class="section-content">
+                <h3>Code</h3>
+                <pre class="code">
+                    <code>window.onload = function () {</code>
+                    <code> console.log('loaded');</code>
+                    <code>};</code>
+                </pre>
             </div>
         </section>
     </div>
