@@ -4,6 +4,10 @@ var webpack = require('webpack-stream');
 gulp.task('js:build', function () {
     return gulp.src('src/js/main.js')
         .pipe(webpack(require('./webpack.config.js')))
+        .on('error', function (error) {
+            console.log(error.toString());
+            this.emit('end');
+        })
         .pipe(gulp.dest('dist/js'));
 });
 
